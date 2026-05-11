@@ -19,13 +19,6 @@
 
 ---
 
- 
-### System Architecture
- 
-<img src="workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
-<!-- ═══════════════════════════════════════════════════════════════ -->
- 
-<br/>
 </div>
 
 ---
