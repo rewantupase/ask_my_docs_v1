@@ -27,6 +27,7 @@
  
 <br/>
 </div>
+
 ---
  
 ## 📌 Table of Contents
@@ -36,6 +37,7 @@
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
 - [Pipeline Deep Dive](#-pipeline-deep-dive)
+  - [System Architecture Diagram](#system-architecture-diagram)
   - [Phase 1 — Document Ingestion](#phase-1--document-ingestion)
   - [Phase 2 — Hybrid Retrieval & Generation](#phase-2--hybrid-retrieval--generation)
   - [Phase 3 — Evaluation & CI/CD](#phase-3--evaluation--cicd)
@@ -46,6 +48,7 @@
 - [Running Tests](#-running-tests)
 - [Key Design Decisions](#-key-design-decisions)
 - [Roadmap](#-roadmap)
+
 ---
 
 ## What is This?
@@ -146,6 +149,14 @@ ask_my_docs/
 ---
 
 ## Pipeline Deep Dive
+
+### System Architecture Diagram
+
+The diagram below shows the full end-to-end flow — from raw documents on the left, through hybrid retrieval and reranking, to a cited answer on the right. Refer back to this as you read through each phase.
+
+<img src="workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
+
+---
 
 ### Phase 1 — Document Ingestion
 
