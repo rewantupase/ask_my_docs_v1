@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔍 Ask My Docs
+# Ask My Docs
 ### A Production-Grade RAG System — 100% Free, 100% Local
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -36,7 +36,7 @@
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [What is This?](#-what-is-this)
 - [Why This Matters](#-why-this-matters)
@@ -56,7 +56,7 @@
 
 ---
 
-## 🧠 What is This?
+## What is This?
 
 **Ask My Docs** is a domain-specific question-answering system built on the RAG (Retrieval-Augmented Generation) architecture. Feed it your documents — research papers, legal contracts, healthcare records, technical manuals — and ask questions in plain English. Every answer comes with citations pointing to the exact source chunk that supports the claim.
 
@@ -74,7 +74,7 @@ Everything runs **locally and for free**. No OpenAI key. No Pinecone account. No
 
 ---
 
-## 💡 Why This Matters
+## Why This Matters
 
 Large language models hallucinate because they generate the most *probable* next token — not the most *grounded* one. RAG fixes this by forcing the model to answer **only from retrieved evidence**. Citations make every claim auditable.
 
@@ -88,7 +88,7 @@ Large language models hallucinate because they generate the most *probable* next
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 > Every tool in this stack is **free and open source**. No API keys. No billing.
 
@@ -109,7 +109,7 @@ Large language models hallucinate because they generate the most *probable* next
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ask_my_docs/
@@ -153,7 +153,7 @@ ask_my_docs/
 
 ---
 
-## 🔬 Pipeline Deep Dive
+## Pipeline Deep Dive
 
 ### Phase 1 — Document Ingestion
 
@@ -274,7 +274,7 @@ RAGAS decomposes every sentence in the answer into atomic claims, then checks wh
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -335,7 +335,7 @@ python scripts/ingest.py --source docs/paper.pdf --reset
 
 **Expected output:**
 ```
-✅  Ingestion complete!
+ Ingestion complete!
    Documents loaded : 21 page(s)
    Chunks created   : 224
    Total in store   : 224
@@ -476,12 +476,12 @@ RAGAS EVALUATION REPORT
 ════════════════════════════════════════════════════════════
 Metric                    Score     Threshold    Status
 ────────────────────────────────────────────────────────────
-  faithfulness            0.9120         0.85    ✅ PASS
-  answer_relevancy        0.8830         0.80    ✅ PASS
-  context_precision       0.7940         0.75    ✅ PASS
+  faithfulness            0.9120         0.85     PASS
+  answer_relevancy        0.8830         0.80     PASS
+  context_precision       0.7940         0.75     PASS
 ────────────────────────────────────────────────────────────
 
-Overall gate: ✅ PASSED
+Overall gate:  PASSED
 ════════════════════════════════════════════════════════════
 ```
 
@@ -520,7 +520,7 @@ python -m pytest tests/ --cov=src --cov-report=term-missing
 | `TestRRFFusion` | 2 | Score decreases with rank, double-rank beats single |
 | `TestCitationEnforcement` | 4 | Valid citation, no-citation block, cannot-answer gate, out-of-range |
 | `TestContextBuilder` | 1 | [Chunk N] headers present in context |
-| | **15 total** | **All passing ✅** |
+| | **15 total** | **All passing** |
 
 ---
 
@@ -543,7 +543,7 @@ Zero infrastructure. ChromaDB persists to local SQLite — restart the process, 
 
 ---
 
-## 🗺 Roadmap
+## Roadmap
 
 - [ ] **Query expansion** — generate alternative phrasings before retrieval to improve recall
 - [ ] **Multi-document comparison** — answer questions that span multiple source documents
@@ -556,7 +556,7 @@ Zero infrastructure. ChromaDB persists to local SQLite — restart the process, 
 
 ---
 
-## 📚 References
+##  References
 
 This system implements ideas from the following research:
 
@@ -579,7 +579,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-Built with 🔍 by someone who believes **citations are not optional**.
+Built with by someone who believes **citations are not optional**.
 
 *If it's not grounded, it's a guess.*
 
