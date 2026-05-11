@@ -26,7 +26,7 @@
 
 ### System Architecture
 
-<img src="assets/workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
+<img src="workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
@@ -305,11 +305,11 @@ pip install -r requirements.txt
 python setup_check.py
 ```
 
-You should see `🎉 All checks passed!` before continuing.
+You should see ` All checks passed!` before continuing.
 
 ---
 
-## 📖 Usage
+## Usage
 
 ### Ingest Documents
 
@@ -386,14 +386,14 @@ CITATIONS (2):
 
 **When information is not in the documents:**
 ```
-📭  I cannot answer this question from the provided documents.
+ I cannot answer this question from the provided documents.
 ```
 
 This is the hallucination gate working — the system refuses to guess.
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 All parameters live in `config.py`. Change here, affects everywhere.
 
@@ -442,7 +442,7 @@ Prompts live in `prompts/v1.yaml` and are tracked by git. To update:
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 ### Create Your Golden Dataset
 
@@ -498,7 +498,7 @@ This is exactly how production AI teams prevent silent quality regressions.
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 # Run all 15 unit tests
@@ -524,7 +524,7 @@ python -m pytest tests/ --cov=src --cov-report=term-missing
 
 ---
 
-## 🏗 Key Design Decisions
+##  Key Design Decisions
 
 **Why BM25 + vector search instead of vector alone?**
 Vector search understands meaning but misses exact terms — model names like `GPT-4o`, version numbers like `BERT-large-uncased`, or rare acronyms like `RLHF`. BM25 nails these. Combining both covers what neither can alone, typically improving retrieval by 15–25%.
