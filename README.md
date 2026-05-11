@@ -19,9 +19,18 @@
 
 ---
 
-## Table of Contents
-
-- [System Architecture](#-system-architecture)
+ 
+### System Architecture
+ 
+<img src="workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
+<!-- ═══════════════════════════════════════════════════════════════ -->
+ 
+<br/>
+</div>
+---
+ 
+## 📌 Table of Contents
+ 
 - [What is This?](#-what-is-this)
 - [Why This Matters](#-why-this-matters)
 - [Tech Stack](#-tech-stack)
@@ -37,20 +46,6 @@
 - [Running Tests](#-running-tests)
 - [Key Design Decisions](#-key-design-decisions)
 - [Roadmap](#-roadmap)
-
----
-
-
-### System Architecture
-
-<img src="workflow.png" alt="Ask My Docs — Full RAG Pipeline Architecture" width="100%"/>
-
-<!-- ═══════════════════════════════════════════════════════════════ -->
-
-<br/>
-
-</div>
-
 ---
 
 ## What is This?
